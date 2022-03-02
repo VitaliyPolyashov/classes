@@ -1,10 +1,9 @@
-.block {
-    width: 100px;
-    height: 100px;
-    background-color: chocolate;
-    margin: 10px;
+.root {
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
-.flex {
-    display: flex;
+.child {
+    justify-self: flex-end;
 }
