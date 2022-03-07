@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px;
+  row-gap: 80px;
+}
+
+.item {
+  padding: 50px;
+  font-size: 36px;
+  border: solid 1px green;
+}
+
+.first {
+}
+
+.grid2 {
+  margin-top: 100px;
+  border: solid 1px red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a b" "a b";
+}
+
+.item2 {
+  grid-area: b;
+}
+
