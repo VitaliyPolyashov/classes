@@ -1,0 +1,14 @@
+@mixin calc_size($value) {
+    width: $value;
+    margin: $value / 4;
+    padding: $value * 2;
+    height: (20px + $value) * 0.97;
+}
+
+.text-size-1 {
+    @include calc_size(20px);
+}
+
+.text-size-2 {
+    @include calc_size(40px);
+}

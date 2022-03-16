@@ -1,0 +1,14 @@
+@mixin font_size($value) {
+   font-size: $value;
+   line-height: $value + 10px; 
+}
+
+.text-mixin {
+    background-color: black;
+    @include font_size(30px);
+}
+
+.text-mixin-2 {
+    background-color: green;
+    @include font_size(20px);
+}

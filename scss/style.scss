@@ -1,0 +1,37 @@
+$my_color: red;
+$my_font_size: 56px;
+$my_width: 50%;
+
+.title {
+    color: $my_color;
+    font-size: $my_font_size;
+}
+
+.panel {
+    background-color: $my_color;
+    font-size: $my_font_size;
+}
+
+.container2 {
+    .text {
+        font-size: 24px;
+    }
+
+    .button {
+        color: green;
+    }
+}
+
+.text {
+    &.panel {
+        width: $my_width;
+    }
+
+    .button {
+        color: green;
+    }
+}
+
+@import 'additional';
+@import 'mixin';
+@import 'math';

@@ -1,0 +1,55 @@
+.title {
+  color: red;
+  font-size: 56px;
+}
+
+.panel {
+  background-color: red;
+  font-size: 56px;
+}
+
+.container2 .text {
+  font-size: 24px;
+}
+.container2 .button {
+  color: green;
+}
+
+.text.panel {
+  width: 50%;
+}
+.text .button {
+  color: green;
+}
+
+.additional-text {
+  font-size: 8px;
+}
+
+.text-mixin {
+  background-color: black;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.text-mixin-2 {
+  background-color: green;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-size-1 {
+  width: 20px;
+  margin: 5px;
+  padding: 40px;
+  height: 38.8px;
+}
+
+.text-size-2 {
+  width: 40px;
+  margin: 10px;
+  padding: 80px;
+  height: 58.2px;
+}
+
+/*# sourceMappingURL=style.css.map */
