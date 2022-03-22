@@ -1,0 +1,24 @@
+$color: green;
+
+@mixin font_size() {
+    font-size: 48px;
+}
+
+.green {
+    background-color: $color;
+    color: white;
+    @include font_size();
+}
+
+.counter {
+    @include font_size();
+}
+
+.element {
+    @include font_size();
+    font-style: italic;
+
+    &.even {
+        background-color: $color;
+    }
+}

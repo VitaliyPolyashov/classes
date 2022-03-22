@@ -1,0 +1,19 @@
+.green {
+  background-color: green;
+  color: white;
+  font-size: 48px;
+}
+
+.counter {
+  font-size: 48px;
+}
+
+.element {
+  font-size: 48px;
+  font-style: italic;
+}
+.element.even {
+  background-color: green;
+}
+
+/*# sourceMappingURL=style.css.map */
