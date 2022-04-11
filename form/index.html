@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <dialog>
+            <div>Content</div>
+        </dialog>
+        <form action="/test" method="post">
+            <fieldset disabled>
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" placeholder="Type text" />
+                </div>
+                <div>
+                    <label for="female">Female?</label>
+                    <input type="checkbox" name="female" />
+                </div>
+            </fieldset>
+            <label for="description">Description</label>
+            <textarea rows="5" name="description" style="resize: none;"></textarea>
+            <fieldset>
+                <label for="file">File</label>
+                <input id="file" type="file" name="file" onchange="upload();"
+                accept="image/png, image/jpeg" />
+                <img id="image" width="100" height="100"/>
+            </fieldset>
+            <input type="tel" id="tel" name="tel">
+            <input type="submit" value="Отправить" />
+        </form>
+
+        <button onclick="openDialog();">open dialog</button>
+        <script>
+            function openDialog() {
+                const dialog = document.querySelector('dialog');
+                dialog.showModal();
+            }
+            
+            function upload() {
+                const fileTag = document.querySelector("#file");
+                const file = fileTag.files[0];
+                const reader = new FileReader();
+                reader.addEventListener('load',function (event) {
+                    const image = document.querySelector('#image');
+                    image.src = event.target.result;
+                    console.log(event); 
+                });
+                reader.readAsDataURL(file);
+                fetch('url')
+            }
+        </script>
+    </body>
+</html>

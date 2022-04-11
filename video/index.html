@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <video id="vid" preload autoplay muted loop controls src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm" width="500" height="300">
+        </video>
+        <script>
+            const video = document.querySelector('#vid');
+            setTimeout(function() {
+                video.pause();
+            }, 3000);
+        </script>
+    </body>
+</html>

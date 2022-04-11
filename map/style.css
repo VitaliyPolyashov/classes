@@ -1,0 +1,25 @@
+#app {
+  display: flex;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+
+#map {
+  flex-grow: 1;
+}
+
+#list > div {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 40px;
+  cursor: pointer;
+}
+
+#list > div:hover {
+  background-color: lightgray;
+}
+

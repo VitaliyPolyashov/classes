@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "title": "Шины",
+        "children": [{
+            "id": 11,
+            "title": "Диаметр 16",
+            "children": [{
+                "id": 111,
+                "title": "Белшина",
+                "children": null  
+            },
+            {
+                "id": 112,
+                "title": "Bridgestone",
+                "children": null  
+            }]
+        },
+        {
+            "id": 12,
+            "title": "Диаметр 17",
+            "children": [{
+                "id": 211,
+                "title": "Goodyear",
+                "children": null  
+            },
+            {
+                "id": 212,
+                "title": "Pirelli",
+                "children": null  
+            }]
+        },
+        {
+            "id": 12,
+            "title": "Диаметр 18",
+            "children": null
+        }    
+    ]
+    },
+    {
+        "id": 2,
+        "title": "Диски",
+        "children": [{
+            "id": 11,
+            "title": "Диаметр 17",
+            "children": null
+        },
+        {
+            "id": 12,
+            "title": "Диаметр 18",
+            "children": null
+        },
+        {
+            "id": 12,
+            "title": "Диаметр 19",
+            "children": null
+        }    
+    ]
+    }
+]

@@ -1,0 +1,9 @@
+#books > div {
+    height: 150px;
+    border: solid black 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
