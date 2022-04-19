@@ -1,0 +1,55 @@
+body {
+  font-family: 'Pacifico', cursive;
+}
+#menu {
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+  width: 100px;  
+  padding: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+#menu:hover > ul {
+  display: block;
+}
+
+#menu:hover > ul > li {
+  display: block;
+}
+
+li:hover > ul {
+  display: block;
+}
+
+li:hover > ul > li {
+  display: block;
+}
+
+li {
+  display: none;
+}
+
+li {
+  font-size: 36px;
+  border-bottom: 1px solid gray;
+  white-space: nowrap;
+  list-style-type: none;
+  position: relative;
+}
+
+li.arrow::after {
+  content: ">>";
+  margin-left: 10px;
+}
+
+.inner-container {
+  position: absolute;
+  top: 0;
+  left: calc(100% - 20px);
+  border: 1px solid black;
+  border-radius: 10px;
+  display: none;
+}
+
